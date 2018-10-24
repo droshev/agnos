@@ -10,8 +10,15 @@
 @import './fundamental-ui/alert';
 @import './fundamental-ui/tabs';
 @import './fundamental-ui/typography';
+@import './fundamental-ui/layout';
 
-@mixin agnos($all: false, $button: false, $alert: false, $tabs: false, $typography: false) {
+@mixin agnos(
+    $all: false,
+    $button: false,
+    $alert: false,
+    $tabs: false,
+    $typography: false
+) {
     @if $all or $button {
         @include button;
     }

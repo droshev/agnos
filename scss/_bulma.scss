@@ -5,8 +5,15 @@
 @import './bulma/alert';
 @import './bulma/tabs';
 @import './bulma/typography';
+@import './bulma/layout';
 
-@mixin agnos($all: false, $button: false, $alert: false, $tabs: false, $typography: false) {
+@mixin agnos(
+    $all: false,
+    $button: false,
+    $alert: false,
+    $tabs: false,
+    $typography: false
+) {
     @if $all or $button {
         @include button;
     }

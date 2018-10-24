@@ -1,13 +1,20 @@
-@import 'node_modules/bootstrap/scss/functions';
-@import 'node_modules/bootstrap/scss/variables';
-@import 'node_modules/bootstrap/scss/mixins';
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
 
 @import './bootstrap/button';
 @import './bootstrap/alert';
 @import './bootstrap/tabs';
 @import './bootstrap/typography';
+@import './bootstrap/layout';
 
-@mixin agnos($all: false, $button: false, $alert: false, $tabs: false, $typography: false) {
+@mixin agnos(
+    $all: false,
+    $button: false,
+    $alert: false,
+    $tabs: false,
+    $typography: false
+) {
     @if $all or $button {
         @include button;
     }

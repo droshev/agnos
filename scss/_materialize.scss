@@ -7,8 +7,15 @@ $font-stack: 'Open Sans';
 @import './materialize/button';
 @import './materialize/tabs';
 @import './materialize/typography';
+@import './materialize/layout';
 
-@mixin agnos($all: false, $button: false, $alert: true, $tabs: false, $typography: false) {
+@mixin agnos(
+    $all: false,
+    $button: false,
+    $alert: true,
+    $tabs: false,
+    $typography: false
+) {
     @if $all or $button {
         @include button;
     }
